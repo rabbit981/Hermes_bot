@@ -55,7 +55,7 @@ threading.Thread(target=keep_alive_self_ping, daemon=True).start()
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 GROQ_API_KEY = os.environ.get("LLM_API_KEY")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.1-8b-instant")
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
 
 bot = telebot.TeleBot(BOT_TOKEN)
 IST = pytz.timezone("Asia/Kolkata")
