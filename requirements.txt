@@ -1,0 +1,8 @@
+flask
+pyTelegramBotAPI
+requests
+schedule>=1.2.0
+pytz
+feedparser
+yfinance>=0.2.40
+pandas
