@@ -27,7 +27,7 @@ from flask import Flask
 BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 GROQ_API_KEY = os.environ.get("LLM_API_KEY")
 CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
-GROQ_MODEL = os.environ.get("GROQ_MODEL", "llama-3.3-70b-versatile")
+GROQ_MODEL = os.environ.get("GROQ_MODEL", "openai/gpt-oss-20b")
 PORT = int(os.environ.get("PORT", 8080))
 RENDER_URL = os.environ.get("RENDER_EXTERNAL_URL")
 UPSTASH_URL = os.environ.get("UPSTASH_REDIS_REST_URL")      # optional (data restart pe safe rahe)
